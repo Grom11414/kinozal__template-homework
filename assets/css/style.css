@@ -2,9 +2,13 @@
   text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
 }
 
+.header, .main, .left-sidebar {
+  margin-bottom: 80.0px;
+}
+
 .navbar-inverse {
-  background-color: #191919;
   margin: 0;
+  background-color: #191919;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -16,9 +20,9 @@
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+  -webkit-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  transition: background-color .5s;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
@@ -35,24 +39,30 @@
 }
 
 .panel {
-  border: none;
-  background-color: #ebebeb;
   margin-bottom: 30px;
+  border: none;
+  background-color: #f1f1f1;
 }
 
 .panel-info > .panel-heading {
-  color: #ffffff;
+  color: #fff;
   border: none;
   background-color: #df8a13;
 }
 
 .panel-title {
   font-size: 1.2rem;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
 }
 
 .panel-body {
   border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+}
+
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 html {
@@ -61,12 +71,17 @@ html {
 }
 
 body {
-  font-size: 1rem;
   font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
 }
 
-.header {
-  margin-bottom: 80.0px;
+a {
+  color: #165690;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #df8a13;
 }
 
 .header-logo {
@@ -78,34 +93,163 @@ body {
 }
 
 .header-logo__title {
+  font-family: "PT Serif", serif;
   display: block;
   color: #df8a13;
-  font-family: "PT Serif", serif;
 }
 
 .header-logo__descr {
-  display: block;
   font-size: 1.15rem;
-  color: #ffffff;
-  letter-spacing: 0.2em;
+  display: block;
+  letter-spacing: .2em;
+  color: #fff;
 }
 
-.main {
-  margin-bottom: 80.0px;
+.main .site-search {
+  margin: -15px 0 45px;
 }
 
-.left-sidebar {
-  margin-bottom: 80.0px;
+.main .user-login {
+  margin-bottom: 60px;
 }
 
 .left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }
 
+.vertical-slider {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.vertical-slider img {
+  width: 100%;
+}
+
+.site-news-item {
+  position: relative;
+  clear: both;
+}
+
+.site-news-item:not(:last-child) {
+  min-height: 85px;
+  margin-bottom: 15px;
+}
+
+.site-news-item:not(:last-child)::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: calc(100% - 85px);
+  height: 1px;
+  content: "";
+  background-color: #dddddd;
+}
+
+.site-news-item:hover .site-news-item__title a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .site-news-item__img {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+
+.site-news-item__img {
+  float: left;
+  width: 75px;
+  margin: 0 10px 10px 0;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.site-news-item__img img {
+  width: 100%;
+}
+
+.site-news-item__title {
+  margin-bottom: 10px;
+}
+
+.site-news-item__title a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.site-news-item__date {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #909090;
+}
+
+.top-rate-body {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.top-rate-list {
+  margin-bottom: 0;
+}
+
+.top-rate-item {
+  margin-right: -1px;
+  margin-left: -1px;
+  padding: 0;
+  border-top: 1px solid #dddddd;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  background-color: transparent;
+}
+
+.top-rate-item a {
+  display: block;
+  padding: 10px 50px 10px 15px;
+}
+
+.top-rate-item:first-child {
+  border-top: none;
+  border-radius: 0;
+}
+
+.top-rate-item:last-child {
+  border-radius: 0;
+}
+
+.top-rate-item:hover {
+  background-color: #df8a13;
+}
+
+.top-rate-item:hover a {
+  color: #fff;
+}
+
+.top-rate-item:hover .badge {
+  background-color: #232323;
+}
+
+.top-rate-badge {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
-    letter-spacing: 0.33em;
+    letter-spacing: .33em;
   }
 }
 
@@ -136,6 +280,6 @@ body {
 @media (max-width: 575.8px) {
   .header-logo__title {
     font-size: 2.5rem;
-    letter-spacing: 0.2em;
+    letter-spacing: .2em;
   }
 }

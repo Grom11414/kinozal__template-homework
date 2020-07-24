@@ -1,4 +1,14 @@
 .main
 {
-    margin-bottom: $gap * 5.3333333;
+    @extend %margin-bottom-lg;
+
+    .site-search
+    {
+        margin: -$gap 0 $gap * 3;
+    }
+
+    .user-login
+    {
+        margin-bottom: $gap * 4;
+    }
 }
