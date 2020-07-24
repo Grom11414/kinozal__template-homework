@@ -1,0 +1,12 @@
+.left-sidebar
+{
+    margin-bottom: $gap * 5.3333333;
+    .panel
+    {
+        &:last-of-type
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+
