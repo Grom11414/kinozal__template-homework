@@ -7,3 +7,28 @@
 {
     margin-bottom: $gap * 5.3333333;
 }
+
+%after-divider
+{
+    position: absolute;
+
+    width: 100%;
+    margin: .85em 0 0 $gap;
+
+    content: '';
+
+    border-bottom: 3px solid rgba(lighten($color-accent, 15%), .7);
+}
+
+%before-divider
+{
+    position: absolute;
+    left: 0;
+
+    width: 30px;
+    margin: 10px 0 0;
+
+    content: '';
+
+    border-bottom: 3px solid rgba(lighten($color-accent, 15%), .7);
+}
