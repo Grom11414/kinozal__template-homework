@@ -45,11 +45,7 @@ h1
     {
         font-size: 2rem;
     }
-
-    &::after
-    {
-        @extend %after-divider;
-    }
+    @extend %after-divider;
 }
 
 h2
@@ -66,18 +62,7 @@ h2
     {
         font-size: 1.75rem;
     }
-
-
-
-    &::before
-    {
-        @extend %before-divider;
-    }
-
-    &::after
-    {
-        @extend %after-divider;
-    }
+    @extend %bef-aft-divider;
 }
 
 h3

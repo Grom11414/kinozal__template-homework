@@ -123,3 +123,17 @@
         font-size: .875rem;
     }
 }
+
+.embed-responsive
+{
+    border: 1px solid $color-gray;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.well
+{
+    border: 1px solid $color-gray;
+    border-radius: 0 0 5px 5px;
+    background-color: darken($color-light, 5.5%);
+}
