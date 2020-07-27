@@ -87,7 +87,7 @@ h2::after {
 
 .input-lg,
 .input-group-lg > .form-control {
-  font-size: 0.875rem;
+  font-size: .875rem;
 }
 
 .embed-responsive {
@@ -270,7 +270,7 @@ h4 {
 }
 
 .film-info__badge {
-  font-size: 0.8em;
+  font-size: .8em;
 }
 
 .film-info__well {
@@ -304,6 +304,28 @@ h4 {
 
 .vertical-slider img {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: none;
+}
+
+.user-login__tabs a {
+  color: #dddddd;
+  border: none !important;
+  padding: 14px 5px 12px !important;
+  background-color: transparent !important;
+}
+
+.user-login__tabs .active a {
+  color: #fff !important;
 }
 
 .site-news-item {
